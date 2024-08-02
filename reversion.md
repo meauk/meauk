@@ -1,9 +1,3 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Reversion Q&amp;A</title>
-</head>
-<body>
 <h2>Question</h2>
 <p>Why did you come back to the Islam?</p>
 <h2>Answer</h2>
@@ -19,5 +13,3 @@
 <p>As a Theist, I still believed the existence of Allah but without a specific theology. I came to see both Christianity and the Islam from their own outside, and I found what is the most different and found that it can be applied to all the religions other than the Islam.</p>
 <p>All the religions including Christianity but except the Islam are based on the relative conflict between Orthodox and Heresy. However, only the Islam is based on the absolute conflict between Pure/Original and Unpure/Unoriginal.</p>
 <p>After I learned this, Allah perfectly removed some hesitation from my heart, and I reverted to the Islam by taking my shahadah with my intention.</p>
-</body>
-</html>
