@@ -3,18 +3,20 @@
 */body {
     counter-reset: h2-counter;
 }
+body h2 {
+    counter-reset: h3-counter;
+}
 body h2::before {
     counter-increment: h2-counter;
-    counter-reset: h3-counter;
     content: "[" counter(h2-counter) "] ";
-}
+}/*
+★★ADD THE FOLLOWING PART IF NECESSARY★★
 body h3 {
-    counter-increment: h3-counter;/*
-    ★★ADD THE FOLLOWING LINE IF NECESSARY★★
-        counter-reset: h4;*/
-}
+    counter-reset: h4;
+}*/
 body h3:before {
-  content: "[" counter(h2-counter) "-" counter(h3-counter) "] ";
+    counter-increment: h3-counter;
+    content: "[" counter(h2-counter) "-" counter(h3-counter) "] ";
 }
 /* ★★★STYLE OF EACH OF <h2> and <h3>★★★
 */h2 {
