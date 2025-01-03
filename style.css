@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* ★★★COUNTER OF <h2> AND <h3> TAGS BETWEEN <body> AND </body>★★★
+*/body {
+    counter-reset: h2-counter;
+}
+body h2::before {
+    counter-increment: h2-counter;
+    counter-reset: h3-counter;
+    content: "[" counter(h2-counter) "] ";
+}
+body h3 {
+    counter-increment: h3-counter;/*
+    ★★ADD THE FOLLOWING LINE IF NECESSARY★★
+        counter-reset: h4;*/
+}
+body h3:before {
+  content: "[" counter(h2-counter) "-" counter(h3-counter) "] ";
+}
+/* ★★★STYLE OF EACH OF <h2> and <h3>★★★
+*/h2 {
+    background-color: lightgray;
+    padding: 0.3em;
+    border-bottom: solid 3px;
+}
+h3 {
+    padding: 0.3em;
+    border-bottom: double 3px;
+}
+/* ★★★STYLE OF TABLE★★★
+*/table, td, th{
+    border: 1px solid;
+    border-collapse: collapse;
+    empty-cells: show;
+}
