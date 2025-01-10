@@ -20,7 +20,7 @@ body h3:before {
 }
 /* ★★★STYLE OF EACH OF <h2> and <h3>★★★
 */h2 {
-    background-color: lightgray;
+    background-color: #dbeef0;
     padding: 0.3em;
     border-bottom: solid 3px;
 }
@@ -28,9 +28,23 @@ h3 {
     padding: 0.3em;
     border-bottom: double 3px;
 }
-/* ★★★STYLE OF TABLE★★★
-*/table, td, th{
+/* ★★★STYLE OF the <div> that has the <table> as a child element★★★
+*/div:has(table){
+    padding-top: 1.5em;
+    padding-left: 1em;
+    padding-bottom: 1.5em;
+    overflow-x: auto;
+    width: 85vw;
+}
+/* ★★★STYLE OF <table> etc.★★★
+*/table, th, td{
     border: 1px solid;
     border-collapse: collapse;
     empty-cells: show;
+}
+th{
+    background-color: #f5e1e1;
+}
+tbody tr:nth-child(even){
+    background-color: #e2e2e2;
 }
