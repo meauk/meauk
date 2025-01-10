@@ -38,6 +38,7 @@ h3 {
 }
 /* ★★★STYLE OF <table> etc.★★★
 */table, th, td{
+    font-size: 1rem;
     border: 1px solid;
     border-collapse: collapse;
     empty-cells: show;
