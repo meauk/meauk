@@ -3,7 +3,7 @@
 /* ★★★ <body> ★★★
 */body {/*
     ★★ STYLE ★★ */
-    font-size:max(2.5vw, 16px);
+    font-size:max(2.5vw, 18px);
     overflow-wrap: normal;/*
     ★★ COUNTER ★★ */
     counter-reset: h2-counter;
@@ -38,21 +38,34 @@ body h3:before {
     padding-left: 1em;
     padding-bottom: 1.5em;
 }
-@media screen and (max-width:520px) {
-    div:has(table) {
-        overflow-x: scroll;
-        width: 85vw;
-    }
-}
-@media screen and (min-width:521px) and (max-width:960px) {
+@media screen and (max-width:415px) {
     div:has(table) {
         overflow-x: auto;
-        width: 85vw;
+        width: 332px;
     }
 }
-@media screen and (max-width:520px) {
+@media screen and (min-width:416px) and (max-width:520px) {
     div:has(table) {
-        width: 100vw;
+        overflow-x: auto;
+        width: 416px;
+    }
+}
+@media screen and (min-width:521px) and (max-width:767px) {
+    div:has(table) {
+        overflow-x: auto;
+        width: 614px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:960px) {
+    div:has(table) {
+        overflow-x: auto;
+        width: 768px;
+    }
+}
+@media screen and (min-width:961px) {
+    div:has(table) {
+        overflow-x: auto;
+        width: 1200px;
     }
 }
 
@@ -61,6 +74,7 @@ body h3:before {
     border: 1px solid;
     border-collapse: collapse;
     empty-cells: show;
+    white-space: nowrap;
 }
 th {
     background-color: #f5e1e1;
