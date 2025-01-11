@@ -1,51 +1,70 @@
 @charset "utf-8";
-/* ★★★COUNTER OF <h2> AND <h3> TAGS BETWEEN <body> AND </body>★★★
-*/body {
+
+/* ★★★ <body> ★★★
+*/body {/*
+    ★★ STYLE ★★ */
+    font-size:max(2.5vw, 16px);
+    overflow-wrap: normal;/*
+    ★★ COUNTER ★★ */
     counter-reset: h2-counter;
 }
-body h2 {
+
+/* ★★★ <h2> & <h3> ★★★
+*/body h2 {/*
+    ★★ STYLE ★★ */
+    background-color: #dbeef0;
+    padding: 0.3em;
+    border-bottom: solid 3px;/*
+    ★★ COUNTER ★★ */
     counter-reset: h3-counter;
 }
 body h2::before {
     counter-increment: h2-counter;
     content: "[" counter(h2-counter) "] ";
-}/*
-★★ADD THE FOLLOWING PART IF NECESSARY★★
-body h3 {
-    counter-reset: h4;
-}*/
+}
+body h3 {/*
+    ★★ STYLE ★★ */
+    padding: 0.3em;
+    border-bottom: double 3px;
+}
 body h3:before {
     counter-increment: h3-counter;
     content: "[" counter(h2-counter) "-" counter(h3-counter) "] ";
 }
-/* ★★★STYLE OF EACH OF <h2> and <h3>★★★
-*/h2 {
-    background-color: #dbeef0;
-    padding: 0.3em;
-    border-bottom: solid 3px;
-}
-h3 {
-    padding: 0.3em;
-    border-bottom: double 3px;
-}
+
 /* ★★★STYLE OF the <div> that has the <table> as a child element★★★
-*/div:has(table){
+*/div:has(table) {
     padding-top: 1.5em;
     padding-left: 1em;
     padding-bottom: 1.5em;
-    overflow-x: auto;
-    width: 85vw;
 }
+@media screen and (max-width:520px) {
+    div:has(table) {
+        overflow-x: scroll;
+        width: 85vw;
+    }
+}
+@media screen and (min-width:521px) and (max-width:960px) {
+    div:has(table) {
+        overflow-x: auto;
+        width: 85vw;
+    }
+}
+@media screen and (max-width:520px) {
+    div:has(table) {
+        width: 100vw;
+    }
+}
+
 /* ★★★STYLE OF <table> etc.★★★
-*/table, th, td{
-    font-size: 1rem;
+*/table, th, td {
     border: 1px solid;
     border-collapse: collapse;
     empty-cells: show;
 }
-th{
+th {
     background-color: #f5e1e1;
 }
-tbody tr:nth-child(even){
+tbody tr:nth-child(even) {
     background-color: #e2e2e2;
 }
