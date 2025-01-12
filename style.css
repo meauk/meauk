@@ -3,9 +3,10 @@
 /* ★★★ <body> ★★★
 */body {/*
     ★★ STYLE ★★ */
-    font-size: medium;
+    font-size: clamp(16px, 2.5vw, 18px);
     overflow-wrap: normal;
-    width: min-content;/*
+    max-width: 100vw;
+    box-sizing: border-box;/*
     ★★ COUNTER ★★ */
     counter-reset: h2-counter;
 }
