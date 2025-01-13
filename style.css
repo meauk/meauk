@@ -35,10 +35,7 @@ body h3::before {
 }
 
 /* ★★★STYLE OF <div> ★★★
-*/div {
-    background-color: #e6f5db;
-}
-@media screen and (max-width:415px) {
+*/@media screen and (max-width:415px) {
     div {
         overflow-x: auto;
         width: 332px;
@@ -84,19 +81,26 @@ div#toc ol li::before {
 }
 
 ★★★STYLE OF SOMETHING AROUND <table>★★★
-*/div:has(table) {
-    padding-top: 1.5em;
-    padding-left: 1em;
-    padding-bottom: 1.5em;
-}
-table, th, td {
-    border: 1px solid;
+*/table {
+    display: inline-block;
     border-collapse: collapse;
-    empty-cells: show;
-    white-space: nowrap;
+    background-color: #e6f5db;
 }
-th {
-    background-color: #f7c9c9;
+table:not(:has(+p)) {
+    padding: 2em;
+    border: 2px dotted;
+}
+table:has(+p) {
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    border-top: 2px dotted;
+    border-right: 2px dotted;
+    border-left: 2px dotted;
+}
+caption {
+    white-space: nowrap;
+    font-weight: bold;
 }
 tbody tr:nth-child(odd) {
     background-color: #ffffff;
@@ -104,6 +108,12 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
     background-color: #d4d4d4;
 }
-table+p {
-    width: 100%;
+th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    empty-cells: show;
+    white-space: nowrap;
+}
+th {
+    background-color: #f7c9c9;
 }
