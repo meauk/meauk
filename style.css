@@ -29,12 +29,58 @@ body h3 {/*
     padding: 0.3em;
     border-bottom: double 3px;
 }
-body h3:before {
+body h3::before {
     counter-increment: h3-counter;
     content: "[" counter(h2-counter) "-" counter(h3-counter) "] ";
 }
 
-/* ★★★STYLE OF <table> etc.★★★
+/* ★★★STYLE OF <div> ★★★
+*/@media screen and (max-width:415px) {
+    div {
+        overflow-x: auto;
+        width: 332px;
+    }
+}
+@media screen and (min-width:416px) and (max-width:520px) {
+    div {
+        overflow-x: auto;
+        width: 416px;
+    }
+}
+@media screen and (min-width:521px) and (max-width:767px) {
+    div {
+        overflow-x: auto;
+        width: 614px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:960px) {
+    div {
+        overflow-x: auto;
+        width: 768px;
+    }
+}
+@media screen and (min-width:961px) {
+    div {
+        overflow-x: auto;
+        width: 1200px;
+    }
+}
+
+/* ★★★ (Currently Not Applied)
+        STYLE OF SOMETHING AROUND <div id="toc">★★★
+div#toc {
+    margin: 0 auto;
+}
+div#toc ol {
+  counter-reset: toc-li;
+  list-style-type: none;
+}
+div#toc ol li::before {
+  counter-increment: toc-li;
+  content: "[" counters(toc-li,"-") "] ";
+}
+
+★★★STYLE OF SOMETHING AROUND <table>★★★
 */div:has(table) {
     padding-top: 1.5em;
     padding-left: 1em;
@@ -52,48 +98,6 @@ th {
 tbody tr:nth-child(even) {
     background-color: #e2e2e2;
 }
-@media screen and (max-width:415px) {
-    div:has(table) {
-        overflow-x: auto;
-        width: 332px;
-    }
-    div p {
-        width: 100%;
-    }
-}
-@media screen and (min-width:416px) and (max-width:520px) {
-    div:has(table) {
-        overflow-x: auto;
-        width: 416px;
-    }
-    div p {
-        width: 100%;
-    }
-}
-@media screen and (min-width:521px) and (max-width:767px) {
-    div:has(table) {
-        overflow-x: auto;
-        width: 614px;
-    }
-    div p {
-        width: 100%;
-    }
-}
-@media screen and (min-width:768px) and (max-width:960px) {
-    div:has(table) {
-        overflow-x: auto;
-        width: 768px;
-    }
-    div p {
-        width: 100%;
-    }
-}
-@media screen and (min-width:961px) {
-    div:has(table) {
-        overflow-x: auto;
-        width: 1200px;
-    }
-    div p {
-        width: 100%;
-    }
+table+p {
+    width: 100%;
 }
