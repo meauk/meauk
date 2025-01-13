@@ -35,7 +35,10 @@ body h3::before {
 }
 
 /* ★★★STYLE OF <div> ★★★
-*/@media screen and (max-width:415px) {
+*/div {
+    background-color: #e6f5db;
+}
+@media screen and (max-width:415px) {
     div {
         overflow-x: auto;
         width: 332px;
@@ -93,10 +96,13 @@ table, th, td {
     white-space: nowrap;
 }
 th {
-    background-color: #f5e1e1;
+    background-color: #f7c9c9;
+}
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
 }
 tbody tr:nth-child(even) {
-    background-color: #e2e2e2;
+    background-color: #d4d4d4;
 }
 table+p {
     width: 100%;
