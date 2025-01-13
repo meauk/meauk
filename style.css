@@ -10,6 +10,9 @@
     ★★ COUNTER ★★ */
     counter-reset: h2-counter;
 }
+body * {
+    box-sizing: inherit;
+}
 
 /* ★★★ <h2> & <h3> ★★★
 */body h2 {/*
@@ -35,7 +38,10 @@ body h3::before {
 }
 
 /* ★★★STYLE OF <div> ★★★
-*/@media screen and (max-width:415px) {
+*/div {
+    border:2px solid #e6f5db;
+}
+@media screen and (max-width:415px) {
     div {
         overflow-x: auto;
         width: 332px;
@@ -84,19 +90,6 @@ div#toc ol li::before {
 */table {
     display: inline-block;
     border-collapse: collapse;
-    background-color: #e6f5db;
-}
-table:not(:has(+p)) {
-    padding: 2em;
-    border: 2px dotted;
-}
-table:has(+p) {
-    padding-top: 2em;
-    padding-right: 2em;
-    padding-left: 2em;
-    border-top: 2px dotted;
-    border-right: 2px dotted;
-    border-left: 2px dotted;
 }
 caption {
     white-space: nowrap;
