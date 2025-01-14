@@ -37,56 +37,58 @@ body h3::before {
     content: "[" counter(h2-counter) "-" counter(h3-counter) "] ";
 }
 
-/* ★★★STYLE OF <div> ★★★
-*/div {
-    border:2px solid #e6f5db;
-}
-@media screen and (max-width:415px) {
-    div {
-        overflow-x: auto;
-        width: 332px;
-    }
-}
-@media screen and (min-width:416px) and (max-width:520px) {
-    div {
-        overflow-x: auto;
-        width: 416px;
-    }
-}
-@media screen and (min-width:521px) and (max-width:767px) {
-    div {
-        overflow-x: auto;
-        width: 614px;
-    }
-}
-@media screen and (min-width:768px) and (max-width:960px) {
-    div {
-        overflow-x: auto;
-        width: 768px;
-    }
-}
-@media screen and (min-width:961px) {
-    div {
-        overflow-x: auto;
-        width: 1200px;
-    }
-}
-
 /* ★★★ (Currently Not Applied)
         STYLE OF SOMETHING AROUND <div id="toc">★★★
-div#toc {
+#toc {
     margin: 0 auto;
 }
-div#toc ol {
+#toc ol {
   counter-reset: toc-li;
   list-style-type: none;
 }
-div#toc ol li::before {
+#toc ol li::before {
   counter-increment: toc-li;
   content: "[" counters(toc-li,"-") "] ";
 }
 
-★★★STYLE OF SOMETHING AROUND <table>★★★
+★★★STYLE OF THE EXTERNAL <div>★★★
+*/.external-div {
+        overflow-x: auto;
+}
+@media screen and (max-width:415px) {
+    .external-div {
+        width: 332px;
+    }
+}
+@media screen and (min-width:416px) and (max-width:520px) {
+    .external-div {
+        width: 416px;
+    }
+}
+@media screen and (min-width:521px) and (max-width:767px) {
+    .external-div {
+        width: 614px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:960px) {
+    .external-div {
+        width: 768px;
+    }
+}
+@media screen and (min-width:961px) {
+    .external-div {
+        width: 1200px;
+    }
+}
+
+/* ★★★STYLE OF THE INTERNAL <div>★★★
+*/.internal-div {
+    width: fit-content;
+    border:2em solid #e6f5db;
+    padding: 1em
+}
+
+/*★★★STYLE OF SOMETHING AROUND <table>★★★
 */table {
     display: inline-block;
     border-collapse: collapse;
