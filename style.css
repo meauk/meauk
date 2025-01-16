@@ -1,17 +1,23 @@
 @charset "utf-8";
 
+/* ★★★ <html> etc. ★★★
+*/html {
+    font-size: clamp(16px, 2.5vw, 18px);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color-scheme: light dark;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 /* ★★★ <body> ★★★
 */body {/*
     ★★ STYLE ★★ */
-    font-size: clamp(16px, 2.5vw, 18px);
     overflow-wrap: normal;
-    max-width: 100vw;
-    box-sizing: border-box;/*
+    max-width: 100vw;/*
     ★★ COUNTER ★★ */
     counter-reset: h2-counter;
-}
-body * {
-    box-sizing: inherit;
 }
 
 /* ★★★ <h2> & <h3> ★★★
@@ -51,41 +57,148 @@ body h3::before {
   content: "[" counters(toc-li,"-") "] ";
 }
 
-★★★STYLE OF THE EXTERNAL <div>★★★
-*/.external-div {
-        overflow-x: auto;
+★★★STYLE OF <div class="scrollable-wrapper">★★★
+*/div.scrollable-wrapper {
+    overflow-x: auto;
 }
-@media screen and (max-width:415px) {
-    .external-div {
-        width: 332px;
+@media screen and (min-width:0px) and (max-width:200px) {
+    div.scrollable-wrapper {
+        width: 161px;
     }
 }
-@media screen and (min-width:416px) and (max-width:520px) {
-    .external-div {
-        width: 416px;
+@media screen and (min-width:201px) and (max-width:250px) {
+    div.scrollable-wrapper {
+        width: 201px;
     }
 }
-@media screen and (min-width:521px) and (max-width:767px) {
-    .external-div {
+@media screen and (min-width:251px) and (max-width:313px) {
+    div.scrollable-wrapper {
+        width: 251px;
+    }
+}
+@media screen and (min-width:314px) and (max-width:392px) {
+    div.scrollable-wrapper {
+        width: 314px;
+    }
+}
+@media screen and (min-width:393px) and (max-width:490px) {
+    div.scrollable-wrapper {
+        width: 393px;
+    }
+}
+@media screen and (min-width:491px) and (max-width:613px) {
+    div.scrollable-wrapper {
+        width: 491px;
+    }
+}
+@media screen and (min-width:614px) and (max-width:767px) {
+    div.scrollable-wrapper {
         width: 614px;
     }
 }
-@media screen and (min-width:768px) and (max-width:960px) {
-    .external-div {
+@media screen and (min-width:768px) and (max-width:959px) {
+    div.scrollable-wrapper {
         width: 768px;
     }
 }
-@media screen and (min-width:961px) {
-    .external-div {
+@media screen and (min-width:960px) and (max-width:1199px) {
+    div.scrollable-wrapper {
+        width: 960px;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1499px) {
+    div.scrollable-wrapper {
         width: 1200px;
     }
 }
+@media screen and (min-width:1500px) and (max-width:1874px) {
+    div.scrollable-wrapper {
+        width: 1500px;
+    }
+}
+@media screen and (min-width:1875px) and (max-width:2343px) {
+    div.scrollable-wrapper {
+        width: 1875px;
+    }
+}
+@media screen and (min-width:2344px) and (max-width:2929px) {
+    div.scrollable-wrapper {
+        width: 2344px;
+    }
+}
 
-/* ★★★STYLE OF THE INTERNAL <div>★★★
-*/.internal-div {
+/* ★★★STYLE OF <div class="main-content">★★★
+*/div.main-content {
     width: fit-content;
-    border:2em solid #e6f5db;
-    padding: 1em
+    border:2rem solid #e6f5db;
+    padding: 1rem
+}
+
+/* ★★★STYLE OF <div class="sub-content">★★★
+*/@media screen and (min-width:0px) and (max-width:200px) {
+    div.sub-content {
+        width: calc(161px - 6rem);
+    }
+}
+@media screen and (min-width:201px) and (max-width:250px) {
+    div.sub-content {
+        width: calc(201px - 6rem);
+    }
+}
+@media screen and (min-width:251px) and (max-width:313px) {
+    div.sub-content {
+        width: calc(251px - 6rem);
+    }
+}
+@media screen and (min-width:314px) and (max-width:392px) {
+    div.sub-content {
+        width: calc(314px - 6rem);
+    }
+}
+@media screen and (min-width:393px) and (max-width:490px) {
+    div.sub-content {
+        width: calc(393px - 6rem);
+    }
+}
+@media screen and (min-width:491px) and (max-width:613px) {
+    div.sub-content {
+        width: calc(491px - 6rem);
+    }
+}
+@media screen and (min-width:614px) and (max-width:767px) {
+    div.sub-content {
+        width: calc(614px - 6rem);
+    }
+}
+@media screen and (min-width:768px) and (max-width:959px) {
+    div.sub-content {
+        width: calc(768px - 6rem);
+    }
+}
+@media screen and (min-width:960px) and (max-width:1199px) {
+    div.sub-content {
+        width: calc(960px - 6rem);
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1499px) {
+    div.sub-content {
+        width: calc(1200px - 6rem);
+    }
+}
+@media screen and (min-width:1500px) and (max-width:1874px) {
+    div.sub-content {
+        width: calc(1500px - 6rem);
+    }
+}
+@media screen and (min-width:1875px) and (max-width:2343px) {
+    div.sub-content {
+        width: calc(1875px - 6rem);
+    }
+}
+@media screen and (min-width:2344px) and (max-width:2929px) {
+    div.sub-content {
+        width: calc(2344px - 6rem);
+    }
 }
 
 /*★★★STYLE OF SOMETHING AROUND <table>★★★
