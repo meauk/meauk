@@ -135,70 +135,8 @@ body h3::before {
 }
 
 /* ★★★STYLE OF <div class="sub-content">★★★
-*/@media screen and (min-width:0px) and (max-width:200px) {
-    div.sub-content {
-        width: calc(161px - 6rem);
-    }
-}
-@media screen and (min-width:201px) and (max-width:250px) {
-    div.sub-content {
-        width: calc(201px - 6rem);
-    }
-}
-@media screen and (min-width:251px) and (max-width:313px) {
-    div.sub-content {
-        width: calc(251px - 6rem);
-    }
-}
-@media screen and (min-width:314px) and (max-width:392px) {
-    div.sub-content {
-        width: calc(314px - 6rem);
-    }
-}
-@media screen and (min-width:393px) and (max-width:490px) {
-    div.sub-content {
-        width: calc(393px - 6rem);
-    }
-}
-@media screen and (min-width:491px) and (max-width:613px) {
-    div.sub-content {
-        width: calc(491px - 6rem);
-    }
-}
-@media screen and (min-width:614px) and (max-width:767px) {
-    div.sub-content {
-        width: calc(614px - 6rem);
-    }
-}
-@media screen and (min-width:768px) and (max-width:959px) {
-    div.sub-content {
-        width: calc(768px - 6rem);
-    }
-}
-@media screen and (min-width:960px) and (max-width:1199px) {
-    div.sub-content {
-        width: calc(960px - 6rem);
-    }
-}
-@media screen and (min-width:1200px) and (max-width:1499px) {
-    div.sub-content {
-        width: calc(1200px - 6rem);
-    }
-}
-@media screen and (min-width:1500px) and (max-width:1874px) {
-    div.sub-content {
-        width: calc(1500px - 6rem);
-    }
-}
-@media screen and (min-width:1875px) and (max-width:2343px) {
-    div.sub-content {
-        width: calc(1875px - 6rem);
-    }
-}
-@media screen and (min-width:2344px) and (max-width:2929px) {
-    div.sub-content {
-        width: calc(2344px - 6rem);
-    }
+*/div.sub-content {
+    max-width: 100%;
 }
 
 /*★★★STYLE OF SOMETHING AROUND <table>★★★
