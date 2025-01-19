@@ -240,3 +240,13 @@ td {
 th {
     background-color: #f7c9c9;
 }
+
+/*★★★STYLE OF <strong>★★★
+*/strong {
+    background:linear-gradient(transparent 60%, #f7c9c9 0%);
+}
+
+/*★★★STYLE OF <dt>★★★
+*/dt {
+    font-size: bold;
+}
