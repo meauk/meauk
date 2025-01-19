@@ -7,54 +7,68 @@
     scroll-behavior: smooth;
     color-scheme: light dark;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
 /* ★★★ <body> ★★★
-*/body {/*
-    ★★ STYLE ★★ */
+*/body {
+    /* ★★ STYLE ★★ */
     overflow-wrap: normal;
-    max-width: 100vw;/*
-    ★★ COUNTER ★★ */
+    max-width: 100vw;
+    /* ★★ COUNTER ★★ */
     counter-reset: h2-counter;
 }
 
 /* ★★★ <h2> & <h3> ★★★
-*/body h2 {/*
-    ★★ STYLE ★★ */
+*/body h2 {
+    /* ★★ STYLE ★★ */
     background-color: #dbeef0;
-    padding: 0.3em;
-    border-bottom: solid 3px;/*
-    ★★ COUNTER ★★ */
+    padding: 0.3rem;
+    border-bottom: solid 4px;
+    /* ★★ COUNTER ★★ */
     counter-reset: h3-counter;
 }
 body h2::before {
     counter-increment: h2-counter;
     content: "[" counter(h2-counter) "] ";
 }
-body h3 {/*
-    ★★ STYLE ★★ */
-    padding: 0.3em;
-    border-bottom: double 3px;
+body h3 {
+    /* ★★ STYLE ★★ */
+    padding: 0.3rem;
+    border-bottom: double 4px;
+    /* ★★ COUNTER ★★ */
+    counter-reset: h4-counter;
 }
 body h3::before {
     counter-increment: h3-counter;
     content: "[" counter(h2-counter) "-" counter(h3-counter) "] ";
 }
+body h4 {
+    /* ★★ STYLE ★★ */
+    padding: 0.3rem;
+    border-bottom: dotted 3px;
+}
+body h4::before {
+    counter-increment: h4-counter;
+    content: "[" counter(h2-counter) "-" counter(h3-counter) "-" counter(h4-counter) "] ";
+}
 
 /* ★★★ (Currently Not Applied)
-        STYLE OF SOMETHING AROUND <div id="toc">★★★
+    STYLE OF SOMETHING AROUND <div id="toc">★★★
 #toc {
-    margin: 0 auto;
+margin: 0 auto;
 }
 #toc ol {
-  counter-reset: toc-li;
-  list-style-type: none;
+counter-reset: toc-li;
+list-style-type: none;
 }
 #toc ol li::before {
-  counter-increment: toc-li;
-  content: "[" counters(toc-li,"-") "] ";
+counter-increment: toc-li;
+content: "[" counters(toc-li,"-") "] ";
 }
 
 ★★★STYLE OF <div class="scrollable-wrapper">★★★
@@ -130,7 +144,7 @@ body h3::before {
 /* ★★★STYLE OF <div class="main-content">★★★
 */div.main-content {
     width: fit-content;
-    border:2rem solid #e6f5db;
+    border: 2rem solid #e6f5db;
     padding: 1rem
 }
 
@@ -216,7 +230,8 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
     background-color: #d4d4d4;
 }
-th, td {
+th,
+td {
     border: 1px solid;
     border-collapse: collapse;
     empty-cells: show;
