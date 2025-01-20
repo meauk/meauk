@@ -899,6 +899,20 @@ Tredeci-&Sexdeci-とSeptendeci-&Novemdeci-という、非対称的なペアに�
     -->
         <section>
             <h3>Latin-origin cardinal components</h3>
+            <!--
+            「100c + 10d + u = N」(ただし、c, d, u はそれぞれ0以上9以下の整数であり、かつ、Nは1以上999以下である)とする。
+
+この時、「c」と「d」にはそれぞれ1種類のみのコンポーネントが対応するため、それぞれを「C(c)」「D(d)」と表し、「u」にはLast型とPenultimate型のコンポーネントが認められるため、それぞれを「L(u)」「P(u)」と表す。
+
+さて、各コンポーネントによるNの表し方は3種類存在する。
+
+IF d = 0 AND c ≥ 1 AND u = 1 THEN
+    N-illion is denoted as (P(u) + C(c))-illion
+ELSE IF (d = 1 OR d = 2 OR (d ≥ 3 AND u = 1)) THEN
+    N-illion is denoted as (C(c) + P(u) + D(d))-illion
+ELSE
+    N-illion is denoted as (C(c) + D(d) + L(u))-illion
+            -->
             <div class="scrollable-wrapper">
                 <div class="main-content">
                     <table>
