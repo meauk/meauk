@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>A</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        th,
+        td {
+            padding-right: 0.3rem;
+            padding-left: 0.3rem;
+        }
+
+        .illion {
+            width: fit-content;
+            white-space: nowrap;
+            font-weight: bold;
+            background-color: lightgreen;
+            padding: 0.3rem;
+            border: 1px green solid;
+        }
+
+        .illion span.note {
+            font-weight: normal;
+            font-size: 85%;
+        }
+
+        .illion span.note:before {
+            content: " ";
+        }
+
+        .illion+.illion,
+        .illion div.indent-type-first,
+        div.indent-type-first+div.indent-type-first {
+            margin-top: 0.3rem;
+        }
+
+        span.type-odd {
+            display: inline-block;
+            background-color: pink;
+            padding: 0.3rem;
+            border: 1px red solid;
+        }
+
+        span.type-even {
+            display: inline-block;
+            background-color: skyblue;
+            padding: 0.3rem;
+            border: 1px blue solid;
+        }
+
+        div.indent-type-first {
+            width: fit-content;
+            background-color: pink;
+            padding: 0.3rem;
+            border: 1px red solid;
+            margin-left: 2rem;
+        }
+
+        div.indent-type-even {
+            width: fit-content;
+            background-color: skyblue;
+            padding: 0.3rem;
+            border: 1px blue solid;
+            margin: 0.3rem 0rem 0.3rem 2rem;
+        }
+
+        div.indent-type-odd {
+            width: fit-content;
+            background-color: pink;
+            padding: 0.3rem;
+            border: 1px red solid;
+            margin: 0.3rem 0rem 0.3rem 2rem;
+        }
+
+        div.indent-type-odd::after,
+        div.indent-type-even::after {
+            margin-left: -2rem;
+        }
+
+        sup,
+        sub {
+            font-size: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="background-color: yellow">仮のタイトル</h2>
+    
+    <section>
+        <h3>Concept of Accomposix</h3>
+        <div class="scrollable-wrapper">
+            <div class="main-content">
+                <table>
+                    <caption>Numeral Accomposixes</caption>
+                    <thead>
+                        <tr>
+                            <th>category<br>of its form origin</th>
+                            <th colspan="2">As One Accomposix</th>
+                            <th>As One Tier-Elucidator</th>
+                        </tr>
+                    </thead>
+                    <tbody style="text-align: center">
+                        <tr>
+                            <th>Cardinal</th>
+                            <td>Primary<br><b>Precomposix</b></td>
+                            <td>It is always put<br>at the beginning<br>in one Numeral Stem.</td>
+                            <td>(It is the obejct<br>of Tier-Elucidator)</td>
+                        </tr>
+                        <tr>
+                            <th>Ordinal</th>
+                            <td><b>Suscomposix</b></td>
+                            <td>It can be put<br>immediately after two kinds<br>of Precomposixes or “kai”.</td>
+                            <td>It can elucidate<br>the first-to-999,999th tier.</td>
+                        </tr>
+                        <tr>
+                            <th>Adverbial</th>
+                            <td>Secondary<br><b>Precomposix</b></td>
+                            <td>It is always put immediately<br> before the Suscomposix.</td>
+                            <td>It works similarly<br>to the Cardinal part<br>of one illion number.</td>
+                        </tr>
+                        <tr>
+                            <th>Multiplicative</th>
+                            <td>the former<br>part of<br><b>Circumcomposix</b></td>
+                            <td>It is nestable,<br>and that at the innermost<br>is always put immediately<br>before the Secondary Precomposix.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Collective</th>
+                            <td>the former<br>part of<br><b>Circumcomposix</b></td>
+                            <td>It is nestable,<br>and that at the innermost<br>is always put immediately<br>after the Suscomposix.</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <dl>
+            <dt>Component</dt>
+            <dd>It is one part of one <b>Numeral Accomposix</b>. There are six kinds of sets as its variation:
+                <ol>
+                    <li>Ones (split into two types):
+                        <ol>
+                            <li>Lastly-Located Ones</li>
+                            <li>Penultimately-Located Ones</li>
+                        </ol>
+                    </li>
+                    <li>Tens</li>
+                    <li>Hundreds</li>
+                    <li>Thousands</li>
+                    <li>Ten-Thousands</li>
+                    <li>Hundred-Thousands</li>
+                </ol>
+            </dd>
+            <dt>Numeral Accomposix</dt>
+            <dd>It is one part of one <b>Numeral Substem</b>. There are five categories as its variation, and each consists of one-to-six kinds of componential sets from the identical category. <del>Those from the same category cannot be put continually</del>.
+                <ol>
+                    <li>Cardinal
+                        <ul>
+                            <li>the only Latin-origin part in one illion number</li>
+                            <li>the Primary Precomposix<br>It is always put at the beginning in one Numeral Stem.)</li>
+                        </ul>
+                    </li>
+                    <li>Ordinal
+                        <ul>
+                            <li>the Suscomposix<br>(It can be put immediately after two kinds of Precomposixes only.)</li>
+                            <li>the Fundamental Tier-Elucidator<br>(It can elucidate the tier located between the first and the 999,999th.)</li>
+                        </ul>
+                    </li>
+                    <li>Adverbial
+                        <ul>
+                            <li>the Secondary Precomposix<br>(It is always put immediately before the Subcomposix.)</li>
+                            <li>the Advanced Tier-Elucidator<br>(It can be used like )</li>
+                        </ul>
+                    </li>
+                    <li>Multiplicative
+                        <ul>
+                            <li>the former part of the Circumcomposix<br>(It is nestable, and that at the innermost is always put immediately before the Secondary Precomposix only.)</li>
+                        </ul>
+                    </li>
+                    <li>Collective
+                        <ul>
+                            <li>the latter part of the Circumcomposix<br>(It is nestable, hat at the innermost is always put immediately after the Subcomposix.)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </dd>
+        </dl>
+    </section>
+    <section>
+        <h3>Example</h3>
+        <div class="scrollable-wrapper">
+            <div class="main-content">
+                <!-- Begin Main Content -->
+                <section>
+                    <h4>Mathematical Notation</h4>
+                    <div class="illion" style="font-size: 24px">
+                        ((2))<sup><span class="type-odd">3 × f<sub>1</sub><sup><span class="type-even">5 × f<sub>2</sub><sup><span class="type-odd">7 × ((14))<sup>11</sup></span> <span class="type-odd">+ 13</span></sup>(10)<sub>f<sub>2</sub></sub></span> <span class="type-even">+ 17 × ((34))<sup>19</sup></span></sup>(6)<sub>f<sub>1</sub></sub></span> <span class="type-odd">+ 23</span></sup>
+                    </div>
+                </section>
+                <section>
+                    <h4>Actual Spelling with Explanations</h4>
+                    <div class="illion">
+                        Duo-<span class="note">[Cardinal 2]-</span>
+                        <div class="indent-type-first">
+                            Triplo-<span class="note">[Multiplicative 3]-</span>
+                            <div class="indent-type-even">
+                                Pentaplo-<span class="note">[Multiplicative 5]-</span>
+                                <div class="indent-type-odd">
+                                    Heptaplo-Tetradecakis-Hendecato-<br><span class="note">[Multiplicative 5]-[Adverbial 14]-[Ordinal 11]-</span>
+                                </div>
+                                <div class="indent-type-odd">
+                                    <div>
+                                        Kai-Tridecato-<br><span class="note">[AND]-[Ordinal 13]-</span>
+                                    </div>
+                                </div>
+                                Decadoi-<span class="note">[Collective 10]</span>
+                            </div>
+                            <div class="indent-type-even">
+                                Heptadecaplo-Tetratricontakis-Renadecato-<br><span class="note">[Multiplicative 17]-[Adverbial 34]-[Ordinal 19]-</span>
+                            </div>
+                            Hexadoi-<span class="note">[Collective 6]</span>
+                        </div>
+                        <div class="indent-type-first">
+                            Kai-Tridiacost-<br><span class="note">[AND]-[Ordinal 23]-</span>
+                        </div>
+                    </div>
+                    <div class="illion">
+                        -illion<span class="note">[SUFFIX]</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
