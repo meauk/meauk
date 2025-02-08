@@ -236,6 +236,8 @@ td {
     border-collapse: collapse;
     empty-cells: show;
     white-space: nowrap;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
 }
 th {
     background-color: #f7c9c9;
@@ -249,4 +251,10 @@ th {
 /*★★★STYLE OF <dt>★★★
 */dt {
     font-weight: bold;
+}
+
+/*★★★STYLE OF <sup> AND <sub> ★★★
+*/sup,
+sub {
+    font-size: 90%;
 }
