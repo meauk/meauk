@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+/* ★★★ Root Variables ★★★ */
+:root {
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --text-color: #222;
+    --bg-color: #fdfdfd;
+    --accent-color-light: #e6f5db;
+    --accent-color-medium: #dbeef0;
+    --accent-color-dark: #3b7b85;
+    --border-color: #ccc;
+    --header-bg-color: #f7c9c9;
+    --header-text-color: #333;
+    --table-stripe-color: #f2f2f2;
+    --highlight-color: #f7c9c9;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #eee;
+        --bg-color: #121212;
+        --accent-color-light: #2a3a2a;
+        --accent-color-medium: #2c4a52;
+        --accent-color-dark: #a8e0e8;
+        --border-color: #555;
+        --header-bg-color: #5a3a3a;
+        --header-text-color: #eee;
+        --table-stripe-color: #2c2c2c;
+        --highlight-color: #5a3a3a;
+    }
+}
+
+
+/* ★★★ <html> etc. ★★★ */
+html {
+    font-size: clamp(16px, 2.5vw, 18px);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color-scheme: light dark;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/* ★★★ <body> ★★★ */
+body {
+    /* ★★ STYLE ★★ */
+    font-family: var(--font-sans);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 1.5rem;
+    overflow-wrap: break-word;
+    max-width: 100vw;
+    /* ★★ COUNTER ★★ */
+    counter-reset: h2-counter;
+}
+
+
+/* ★★★ <h2> & <h3> & <h4> ★★★ */
+body h2 {
+    /* ★★ STYLE ★★ */
+    background-color: var(--accent-color-medium);
+    color: var(--header-text-color);
+    padding: 0.5rem 1rem;
+    border-bottom: 3px solid var(--accent-color-dark);
+    border-radius: 4px 4px 0 0;
+    margin-top: 2rem;
+    /* ★★ COUNTER ★★ */
+    counter-reset: h3-counter;
+}
+body h2::before {
+    counter-increment: h2-counter;
+    content: "[" counter(h2-counter) "] ";
+}
+body h3 {
+    /* ★★ STYLE ★★ */
+    padding: 0.3rem 0.5rem;
+    border-bottom: 2px double var(--border-color);
+    margin-top: 1.5rem;
+    /* ★★ COUNTER ★★ */
+    counter-reset: h4-counter;
+}
+body h3::before {
+    counter-increment: h3-counter;
+    content: "[" counter(h2-counter) "-" counter(h3-counter) "] ";
+}
+body h4 {
+    /* ★★ STYLE ★★ */
+    padding: 0.3rem;
+    border-bottom: 1px dotted var(--border-color);
+    margin-top: 1.5rem;
+}
+body h4::before {
+    counter-increment: h4-counter;
+    content: "[" counter(h2-counter) "-" counter(h3-counter) "-" counter(h4-counter) "] ";
+}
+
+
+/* ★★★ STYLE OF <div id="toc"> etc. ★★★ */
+#toc {
+    margin: 1rem auto;
+    padding: 1rem;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+#toc ol {
+    counter-reset: toc-li;
+    list-style-type: none;
+    padding-left: 0;
+}
+#toc ol li::before {
+    counter-increment: toc-li;
+    content: "[" counters(toc-li,"-") "] ";
+}
+
+
+/* ★★★ STYLE OF <div class="scrollable-wrapper"> ★★★ */
+div.scrollable-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+
+
+/* ★★★ STYLE OF <div class="main-content"> ★★★ */
+div.main-content {
+    width: fit-content;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--accent-color-light);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+
+/* ★★★ STYLE OF <div class="sub-content"> ★★★ */
+div.sub-content {
+    width: auto;
+    padding: 1rem;
+    border-left: 3px solid var(--accent-color-medium);
+}
+
+
+/* ★★★ STYLE OF <table> etc. ★★★ */
+table {
+    display: table;
+    width: 100%;
+    min-width: fit-content;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+caption {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+}
+thead {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+}
+tbody tr:nth-child(odd) {
+    background-color: transparent;
+}
+tbody tr:nth-child(even) {
+    background-color: var(--table-stripe-color);
+}
+th,
+td {
+    border: 1px solid var(--border-color);
+    border-collapse: collapse;
+    empty-cells: show;
+    white-space: nowrap;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+th {
+    background-color: var(--header-bg-color);
+    font-weight: 600;
+}
+
+
+/* ★★★ STYLE OF <strong> ★★★ */
+strong {
+    background: linear-gradient(transparent 60%, var(--highlight-color) 0%);
+    color: var(--text-color);
+}
+
+
+/* ★★★ STYLE OF <dt> ★★★ */
+dt {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+
+/* ★★★ STYLE OF <sup> AND <sub> ★★★ */
+sup,
+sub {
+    font-size: 80%;
+    line-height: 0;
+}
+
+
+/* ★★★ STYLE OF <code> ★★★ */
+code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    background-color: var(--table-stripe-color);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+
+/* ★★★ STYLE OF <ul> AND <ol> ★★★ */
+ul, ol {
+    padding-left: 1.5rem;
+}
