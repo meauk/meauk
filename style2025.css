@@ -8,7 +8,7 @@
     --bg-color-base: #fdfdfd;
     --bg-color-accent: #f2f2f2;
     --bg-color-empty: #ccc;
-    --bg-color-h2: #bcc9f7;
+    --bg-color-header: #bcc9f7;
     --bg-color-highlight: #f7c9c9;
     --bg-color-main: #e6f5db;
     --bg-color-th: #f7bcc9;
@@ -24,7 +24,7 @@
         --bg-color-base: #121212;
         --bg-color-accent: #2c2c2c;
         --bg-color-empty: #555;
-        --bg-color-h2: #2c4a52;
+        --bg-color-header: #2c4a52;
         --bg-color-highlight: #5a3a3a;
         --bg-color-main: #2a3a2a;
         --bg-color-th: #5a3a3a;
@@ -68,7 +68,7 @@ body {
 /* ★★★ <h2> & <h3> & <h4> ★★★ */
 body h2 {
     /* ★★ STYLE ★★ */
-    background-color: var(--bg-color-h2);
+    background-color: var(--bg-color-header);
     color: var(--text-color-header);
     padding: 0.5rem 1rem;
     border-bottom: 3px solid var(--border-color-accent);
@@ -158,7 +158,6 @@ table {
     min-width: fit-content;
     border-collapse: collapse;
     margin: 1.5rem 0;
-    box-shadow: 0 4px 8px var(--shadow-color);
     border-radius: 8px;
     overflow: hidden;
 }
@@ -167,7 +166,7 @@ caption {
     font-weight: bold;
     font-size: 1.2rem;
     padding: 0.8rem;
-    background-color: transparent;
+    background-color: var(--bg-color-header);
     color: var(--text-color-header);
 }
 thead { /* To Be Deleted */
