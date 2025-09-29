@@ -171,10 +171,6 @@ caption {
     background-color: var(--bg-color-header);
     color: var(--text-color-header);
 }
-thead { /* To Be Deleted */
-    background-color: var(--bg-color-th);
-    color: var(--text-color-header);
-}
 tbody tr:nth-child(odd) {
     background-color: var(--bg-color-base);
 }
@@ -187,14 +183,17 @@ td {
     border-collapse: collapse;
     empty-cells: show;
     white-space: nowrap;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 0.75rem;
+    line-height: 1.4;
 }
 th {
     background-color: var(--bg-color-th);
-    font-weight: 600;
+    color: var(--text-color-header);
+    font-weight: 700; /* bold */
     text-align: center;
 }
 td {
+    color: var(--text-color-base);
     text-align: left;
 }
 td.empty {
