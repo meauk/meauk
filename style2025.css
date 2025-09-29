@@ -14,6 +14,7 @@
     --bg-color-th: #f7bcc9;
     --border-color-base: #ccc;
     --border-color-accent: #3b7b85;
+    --border-color-cell: #565656;
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -30,6 +31,7 @@
         --bg-color-th: #5a3a3a;
         --border-color-base: #555;
         --border-color-accent: #a8e0e8;
+        --border-color-cell: #aeaeae;
     }
 }
 
@@ -181,7 +183,7 @@ tbody tr:nth-child(even) {
 }
 th,
 td {
-    border: 1px solid var(--border-color-base);
+    border: 1px solid var(--border-color-cell);
     border-collapse: collapse;
     empty-cells: show;
     white-space: nowrap;
@@ -194,6 +196,9 @@ th {
 }
 td {
     text-align: left;
+}
+td.empty {
+    background-color: var(--bg-color-empty);
 }
 
 
