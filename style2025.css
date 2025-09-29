@@ -131,6 +131,13 @@ div.scrollable-wrapper {
     overflow-x: auto;
     width: 100%;
 }
+@media print {
+    div.scrollable-wrapper {
+        overflow-x: visible; !important
+        page-break-before: always;
+        page-break-after: always;
+    }
+}
 
 
 /* ★★★ STYLE OF <div class="main-content"> ★★★ */
@@ -160,7 +167,6 @@ table {
     min-width: fit-content;
     border-collapse: collapse;
     margin: 1.5rem 0;
-    border-radius: 8px;
     overflow: hidden;
 }
 caption {
