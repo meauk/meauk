@@ -133,7 +133,7 @@ div.scrollable-wrapper {
 }
 @media print {
     div.scrollable-wrapper {
-        overflow-x: visible !important;
+        overflow-x: visible;
         page-break-before: always;
         page-break-after: always;
     }
@@ -212,8 +212,10 @@ strong {
     background-image: linear-gradient(
         to bottom,
         transparent 60%,
-        var(--bg-color-highlight) 0%) !important;
+        var(--bg-color-highlight) 60%);
+    }
     color: var(--text-color-base);
+    box-decoration-break: clone;
 }
 
 
