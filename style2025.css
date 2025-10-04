@@ -15,6 +15,7 @@
     --border-color-base: #ccc;
     --border-color-accent: #3b7b85;
     --border-color-cell: #565656;
+    --indent-size: 1.5;
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -244,7 +245,24 @@ code {
 }
 
 
-/* ★★★ STYLE OF <ul> AND <ol> ★★★ */
-ul, ol {
-    padding-left: 1.5rem;
+/* ★★★ STYLE OF <dl>, <ol> AND <ul> ★★★ */
+dl,
+ol,
+ul {
+    margin-left: 0rem;
+}
+dt {
+    font-weight: bold;
+}
+dd,
+li {
+    margin-left: calc(var(--indent-size) * 1rem);
+}
+dd.has-list-only > dl,
+dd.has-list-only > ol,
+dd.has-list-only > ul,
+li.has-list-only > dl,
+li.has-list-only > ol,
+li.has-list-only > ul {
+    margin-left: calc(var(--indent-size) * -1rem);
 }
