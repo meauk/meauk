@@ -251,6 +251,9 @@ ol,
 ul {
     margin-left: 0rem;
 }
+:is(dd, li).has-list-only > :is(dl, ol, ul) {
+    margin-left: calc(var(--indent-size) * -1rem);
+}
 dt {
     font-weight: bold;
 }
@@ -258,11 +261,19 @@ dd,
 li {
     margin-left: calc(var(--indent-size) * 1rem);
 }
-dd.has-list-only > dl,
-dd.has-list-only > ol,
-dd.has-list-only > ul,
-li.has-list-only > dl,
-li.has-list-only > ol,
-li.has-list-only > ul {
-    margin-left: calc(var(--indent-size) * -1rem);
+ol > li {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+dd > ul > li,
+ol > li > ul > li,
+ul > li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+ul > li > ul > li,
+ul > li > ul > li > ul > li > ul > li,
+ul > li > ul > li > ul > li > ul > li > ul > li > ul > li {
+    list-style-type: circle;
+    list-style-position: inside;
 }
