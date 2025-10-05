@@ -177,6 +177,7 @@ caption {
     padding: 0.8rem;
     background-color: var(--bg-color-header);
     color: var(--text-color-header);
+    text-align: center;
 }
 tbody tr:nth-child(odd) {
     background-color: var(--bg-color-base);
