@@ -179,10 +179,10 @@ caption {
     color: var(--text-color-header);
     text-align: center;
 }
-tbody tr:nth-child(odd) {
+tbody > tr:nth-child(odd) > td {
     background-color: var(--bg-color-base);
 }
-tbody tr:nth-child(even) {
+tbody > tr:nth-child(even) > td {
     background-color: var(--bg-color-accent);
 }
 th,
@@ -244,6 +244,9 @@ code {
     border-radius: 4px;
     font-size: 0.9em;
 }
+tbody tr:nth-child(even) > td > code {
+    background-color: var(--bg-color-base);
+}
 
 
 /* ★★★ STYLE OF <dl>, <ol> AND <ul> ★★★ */
@@ -277,4 +280,10 @@ ul > li > ul > li > ul > li > ul > li,
 ul > li > ul > li > ul > li > ul > li > ul > li > ul > li {
     list-style-type: circle;
     list-style-position: inside;
+}
+
+
+/* ★★★ STYLE FOR class="indent" ★★★ */
+.indent {
+    margin-left: calc(var(--indent-size) * 1rem);
 }
