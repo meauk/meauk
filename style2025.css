@@ -199,6 +199,7 @@ th {
     color: var(--text-color-header);
     font-weight: 700; /* bold */
     text-align: center;
+    vertical-align: middle;
 }
 td {
     color: var(--text-color-base);
@@ -247,6 +248,17 @@ code {
 tbody tr:nth-child(even) > td code {
     background-color: var(--bg-color-base);
 }
+code:has(div){
+    display: block;
+    width: max-content;
+}
+code > div {
+    white-space: pre;
+}
+code .indent {
+    margin-left: 0rem;
+    padding-left: calc(var(--indent-size) * 1rem);
+}
 
 
 /* ★★★ STYLE OF <dl>, <ol> AND <ul> ★★★ */
@@ -284,6 +296,6 @@ ul > li > ul > li > ul > li > ul > li > ul > li > ul > li {
 
 
 /* ★★★ STYLE FOR class="indent" ★★★ */
-.indent {
+.indent:not(code) {
     margin-left: calc(var(--indent-size) * 1rem);
 }
