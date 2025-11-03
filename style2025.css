@@ -188,7 +188,6 @@ tbody > tr:nth-child(even) > td {
 th,
 td {
     border: 1px solid var(--border-color-cell);
-    border-collapse: collapse;
     empty-cells: show;
     white-space: nowrap;
     padding: 0.5rem 0.75rem;
