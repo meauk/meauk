@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3100年750閏暦</title>
+    <link rel="icon" href="https://meauk.github.io/meauk/favicon.ico">
+    <link rel="stylesheet" href="https://nicolas-cusan.github.io/destyle.css/destyle.css">
+    <link rel="stylesheet" href="https://meauk.github.io/meauk/style2025.css">
+    <style>
+        th,
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article>
+            <div class="scrollable-wrapper">
+                <div class="main-content">
+                    <table style="white-space: nowrap">
+                        <caption>西暦系太陽暦の詳細</caption>
+                        <tr>
+                            <th>特徴</th>
+                            <th>3100年750閏暦<br />（私の提案）</th>
+                            <th>ユリウス暦</th>
+                            <th>グレゴリオ暦<br />（1582年施行）</th>
+                            <th>修正ユリウス暦<br />（1923年施行）</th>
+                        </tr>
+                        <tr>
+                            <th>総年数／周</th>
+                            <td>3100</td>
+                            <td>4</td>
+                            <td>400</td>
+                            <td>900</td>
+                        </tr>
+                        <tr>
+                            <th>閏日数／周</th>
+                            <td>750</td>
+                            <td>1</td>
+                            <td>97</td>
+                            <td>218</td>
+                        </tr>
+                        <tr>
+                            <th>総日数／周<br />（注1）</th>
+                            <td>1,132,250<br />（161,750週）</td>
+                            <td>1,461<br />（208週 + 5日）</td>
+                            <td>146,097<br />（20,871週）</td>
+                            <td>328,718<br />（46,959週 + 5日）</td>
+                        </tr>
+                        <tr>
+                            <th>平均暦日数／暦年<br />（注2）</th>
+                            <td>正確に 365 + 15/62<br />＝概ね 365.241935</td>
+                            <td>正確に<br />365.25</td>
+                            <td>正確に<br />365.2425</td>
+                            <td>正確に 365 + 109/450<br />＝概ね 365.242222</td>
+                        </tr>
+                        <tr>
+                            <th>置閏法：<br />閏日の再挿入条件<br />（注3）</th>
+                            <td>西暦年を 3100 で割った<br />余りの下三桁が<br />400 または 900 である。</td>
+                            <td>&mdash;</td>
+                            <td>西暦年が<br />400 で割り切れる。</td>
+                            <td>西暦年を<br />900 で割った余りが<br />200 または 600 である。</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sub-content">
+                    注：
+                    <ol>
+                        <li>平年を365暦日として計算しています。各月の日数はユリウス暦からの伝統を引き継ぎ、閏日は2月に挿入されるものとします。</li>
+                        <li>実際の平均太陽年は段々短くなってきています。2026年時点のそれは 365.242189日よりわずかに短いです。</li>
+                        <li>表内の全暦法について「4で割り切れる西暦年に閏日が挿入されるものとする」、ユリウス暦以外についてはその規定に加えて「100で割り切れる西暦年では閏日の挿入がキャンセルされるものとする」が前提とされているものとします。</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="scrollable-wrapper">
+                <div class="main-content">
+                    <table style="white-space: nowrap">
+                        <caption>特定の期間における西暦系太陽暦間での日付のズレ</caption>
+                        <tr>
+                            <th colspan="2">キリスト紀元<br />（天文学的紀年法）</th>
+                            <th>3100年750閏暦<br />（対照基準）</th>
+                            <th colspan="2">ユリウス暦での日付</th>
+                            <th colspan="2">グレゴリオ暦での日付</th>
+                            <th colspan="2">修正ユリウス暦での日付</th>
+                        </tr>
+                        <tr>
+                            <th>ズレ計算<br />有効期間の<br />開始日：<br />下記の年の<br />3月1日</th>
+                            <th>ズレ計算<br />有効期間の<br />終了日：<br />下記の年の<br />2月28日</th>
+                            <th>最後の年の平閏</th>
+                            <th>何日遅いか<br />（基準暦に<br />　同日付が<br />　必ず存在）</th>
+                            <th>有効期間直後の<br />2月29日<br />（基準暦に対し<br />非対称的）</th>
+                            <th>何日遅いか<br />（基準暦に<br />　同日付が<br />　必ず存在）</th>
+                            <th>有効期間直後の<br />2月29日<br />（基準暦に対し<br />非対称的）</th>
+                            <th>何日遅いか<br />（基準暦に<br />　同日付が<br />　必ず存在）</th>
+                            <th>有効期間直後の<br />2月29日<br />（基準暦に対し<br />非対称的）</th>
+                        </tr>
+                        <tr>
+                            <th>0</th>
+                            <th>100</th>
+                            <th>平年</th>
+                            <td>-3</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td>なし</td>
+                            <td>-1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>100</th>
+                            <th>200</th>
+                            <th>平年</th>
+                            <td>-2</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td>なし</td>
+                            <td>-1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>200</th>
+                            <th>300</th>
+                            <th>平年</th>
+                            <td>-1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>300</th>
+                            <th>400</th>
+                            <th style="color: blue">閏年</th>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>400</th>
+                            <th>500</th>
+                            <th>平年</th>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td>なし</td>
+                            <td>-1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>500</th>
+                            <th>600</th>
+                            <th>平年</th>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td>なし</td>
+                            <td>-1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>600</th>
+                            <th>700</th>
+                            <th>平年</th>
+                            <td>+2</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>700</th>
+                            <th>800</th>
+                            <th>平年</th>
+                            <td>+3</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>800</th>
+                            <th>900</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+4</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>900</th>
+                            <th>1000</th>
+                            <th>平年</th>
+                            <td>+4</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td>なし</td>
+                            <td>-1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>1000</th>
+                            <th>1100</th>
+                            <th>平年</th>
+                            <td>+5</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td>なし</td>
+                            <td>-1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>1100</th>
+                            <th>1200</th>
+                            <th>平年</th>
+                            <td>+6</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>1200</th>
+                            <th>1300</th>
+                            <th>平年</th>
+                            <td>+7</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>1300</th>
+                            <th>1400</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+8</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>1400</th>
+                            <th>1500</th>
+                            <th>平年</th>
+                            <td>+8</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td>なし</td>
+                            <td>-1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>1500</th>
+                            <th>1600</th>
+                            <th>平年</th>
+                            <td>+9</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>1600</th>
+                            <th>1700</th>
+                            <th>平年</th>
+                            <td>+10</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>1700</th>
+                            <th>1800</th>
+                            <th>平年</th>
+                            <td>+11</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>1800</th>
+                            <th>1900</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+12</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>1900</th>
+                            <th>2000</th>
+                            <th>平年</th>
+                            <td>+12</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>-1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>2000</th>
+                            <th>2100</th>
+                            <th>平年</th>
+                            <td>+13</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>2100</th>
+                            <th>2200</th>
+                            <th>平年</th>
+                            <td>+14</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>2200</th>
+                            <th>2300</th>
+                            <th>平年</th>
+                            <td>+15</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>2300</th>
+                            <th>2400</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+16</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>2400</th>
+                            <th>2500</th>
+                            <th>平年</th>
+                            <td>+16</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>2500</th>
+                            <th>2600</th>
+                            <th>平年</th>
+                            <td>+17</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>2600</th>
+                            <th>2700</th>
+                            <th>平年</th>
+                            <td>+18</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>2700</th>
+                            <th>2800</th>
+                            <th>平年</th>
+                            <td>+19</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>2800</th>
+                            <th>2900</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+20</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>2900</th>
+                            <th>3000</th>
+                            <th>平年</th>
+                            <td>+20</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>3000</th>
+                            <th>3100</th>
+                            <th>平年</th>
+                            <td>+21</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>3100</th>
+                            <th>3200</th>
+                            <th>平年</th>
+                            <td>+22</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>3200</th>
+                            <th>3300</th>
+                            <th>平年</th>
+                            <td>+23</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>3300</th>
+                            <th>3400</th>
+                            <th>平年</th>
+                            <td>+24</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>3400</th>
+                            <th>3500</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+25</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>3500</th>
+                            <th>3600</th>
+                            <th>平年</th>
+                            <td>+25</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>3600</th>
+                            <th>3700</th>
+                            <th>平年</th>
+                            <td>+26</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>3700</th>
+                            <th>3800</th>
+                            <th>平年</th>
+                            <td>+27</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>3800</th>
+                            <th>3900</th>
+                            <th>平年</th>
+                            <td>+28</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>3900</th>
+                            <th>4000</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+29</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>4000</th>
+                            <th>4100</th>
+                            <th>平年</th>
+                            <td>+29</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>4100</th>
+                            <th>4200</th>
+                            <th>平年</th>
+                            <td>+30</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>4200</th>
+                            <th>4300</th>
+                            <th>平年</th>
+                            <td>+31</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>4300</th>
+                            <th>4400</th>
+                            <th>平年</th>
+                            <td>+32</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>4400</th>
+                            <th>4500</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+33</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>4500</th>
+                            <th>4600</th>
+                            <th>平年</th>
+                            <td>+33</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>4600</th>
+                            <th>4700</th>
+                            <th>平年</th>
+                            <td>+34</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>4700</th>
+                            <th>4800</th>
+                            <th>平年</th>
+                            <td>+35</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>4800</th>
+                            <th>4900</th>
+                            <th>平年</th>
+                            <td>+36</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>4900</th>
+                            <th>5000</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+37</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>5000</th>
+                            <th>5100</th>
+                            <th>平年</th>
+                            <td>+37</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>5100</th>
+                            <th>5200</th>
+                            <th>平年</th>
+                            <td>+38</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>5200</th>
+                            <th>5300</th>
+                            <th>平年</th>
+                            <td>+39</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>5300</th>
+                            <th>5400</th>
+                            <th>平年</th>
+                            <td>+40</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>5400</th>
+                            <th>5500</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+41</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>5500</th>
+                            <th>5600</th>
+                            <th>平年</th>
+                            <td>+41</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td style="background-color: #90ee90">0</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>5600</th>
+                            <th>5700</th>
+                            <th>平年</th>
+                            <td>+42</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>5700</th>
+                            <th>5800</th>
+                            <th>平年</th>
+                            <td>+43</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>5800</th>
+                            <th>5900</th>
+                            <th>平年</th>
+                            <td>+44</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>5900</th>
+                            <th>6000</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+45</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>6000</th>
+                            <th>6100</th>
+                            <th>平年</th>
+                            <td>+45</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>6100</th>
+                            <th>6200</th>
+                            <th>平年</th>
+                            <td>+46</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>6200</th>
+                            <th>6300</th>
+                            <th>平年</th>
+                            <td>+47</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>6300</th>
+                            <th>6400</th>
+                            <th>平年</th>
+                            <td>+48</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>6400</th>
+                            <th>6500</th>
+                            <th>平年</th>
+                            <td>+49</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>6500</th>
+                            <th>6600</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+50</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>6600</th>
+                            <th>6700</th>
+                            <th>平年</th>
+                            <td>+50</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>6700</th>
+                            <th>6800</th>
+                            <th>平年</th>
+                            <td>+51</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>6800</th>
+                            <th>6900</th>
+                            <th>平年</th>
+                            <td>+52</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>6900</th>
+                            <th>7000</th>
+                            <th>平年</th>
+                            <td>+53</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>7000</th>
+                            <th>7100</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+54</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>7100</th>
+                            <th>7200</th>
+                            <th>平年</th>
+                            <td>+54</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>7200</th>
+                            <th>7300</th>
+                            <th>平年</th>
+                            <td>+55</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>7300</th>
+                            <th>7400</th>
+                            <th>平年</th>
+                            <td>+56</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>7400</th>
+                            <th>7500</th>
+                            <th>平年</th>
+                            <td>+57</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>7500</th>
+                            <th>7600</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+58</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>7600</th>
+                            <th>7700</th>
+                            <th>平年</th>
+                            <td>+58</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>7700</th>
+                            <th>7800</th>
+                            <th>平年</th>
+                            <td>+59</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>7800</th>
+                            <th>7900</th>
+                            <th>平年</th>
+                            <td>+60</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>7900</th>
+                            <th>8000</th>
+                            <th>平年</th>
+                            <td>+61</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>8000</th>
+                            <th>8100</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+62</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>8100</th>
+                            <th>8200</th>
+                            <th>平年</th>
+                            <td>+62</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>8200</th>
+                            <th>8300</th>
+                            <th>平年</th>
+                            <td>+63</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>8300</th>
+                            <th>8400</th>
+                            <th>平年</th>
+                            <td>+64</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>8400</th>
+                            <th>8500</th>
+                            <th>平年</th>
+                            <td>+65</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>8500</th>
+                            <th>8600</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+66</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>8600</th>
+                            <th>8700</th>
+                            <th>平年</th>
+                            <td>+66</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>8700</th>
+                            <th>8800</th>
+                            <th>平年</th>
+                            <td>+67</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>8800</th>
+                            <th>8900</th>
+                            <th>平年</th>
+                            <td>+68</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>8900</th>
+                            <th>9000</th>
+                            <th>平年</th>
+                            <td>+69</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>9000</th>
+                            <th>9100</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+70</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>9100</th>
+                            <th>9200</th>
+                            <th>平年</th>
+                            <td>+70</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+3</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+1</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>9200</th>
+                            <th>9300</th>
+                            <th>平年</th>
+                            <td>+71</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>9300</th>
+                            <th>9400</th>
+                            <th>平年</th>
+                            <td>+72</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>9400</th>
+                            <th>9500</th>
+                            <th>平年</th>
+                            <td>+73</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>9500</th>
+                            <th>9600</th>
+                            <th>平年</th>
+                            <td>+74</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td style="background-color: #add8e6">あり</td>
+                        </tr>
+                        <tr>
+                            <th>9600</th>
+                            <th>9700</th>
+                            <th style="color: blue">閏年</th>
+                            <td>+75</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+5</td>
+                            <td>なし</td>
+                            <td>+3</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>9700</th>
+                            <th>9800</th>
+                            <th>平年</th>
+                            <td>+75</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>9800</th>
+                            <th>9900</th>
+                            <th>平年</th>
+                            <td>+76</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td>なし</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                        <tr>
+                            <th>9900</th>
+                            <th>10000</th>
+                            <th>平年</th>
+                            <td>+77</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+4</td>
+                            <td style="background-color: #add8e6">あり</td>
+                            <td>+2</td>
+                            <td>なし</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
