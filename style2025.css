@@ -209,6 +209,17 @@ td.empty {
 }
 
 
+/* ★★★ STYLE OF <table class="fixed"> ★★★ */
+table.fixed {
+    table-layout: fixed;
+    min-width: 40rem;
+}
+table.fixed th,
+table.fixed td {
+    white-space: normal;
+}
+
+
 /* ★★★ STYLE OF <strong> ★★★ */
 strong {
     background-image: linear-gradient(
