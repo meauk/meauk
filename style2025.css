@@ -298,3 +298,228 @@ ul > li > ul > li > ul > li > ul > li > ul > li > ul > li {
 .indent:not(code) {
     margin-left: calc(var(--indent-size) * 1rem);
 }
+
+
+/* ★★★ STYLE OF BUTTONS ★★★ */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color-header);
+    background-color: var(--bg-color-header);
+    border: 1px solid var(--border-color-accent);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transition: opacity 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    vertical-align: middle;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.85;
+}
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px var(--shadow-color);
+}
+button:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+input[type="reset"]:disabled {
+    background-color: var(--bg-color-empty);
+    border-color: var(--border-color-base);
+    color: var(--text-color-base);
+    cursor: not-allowed;
+    opacity: 0.6;
+    box-shadow: none;
+    transform: none;
+}
+
+
+/* ★★★ STYLE OF <select> ★★★ */
+select {
+    display: inline-block;
+    field-sizing: content;
+    min-width: 5rem;
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--text-color-base);
+    background-color: var(--bg-color-base);
+    border: 1px solid var(--border-color-base);
+    border-radius: 4px;
+    cursor: pointer;
+    background-image: 
+        linear-gradient(45deg, transparent 50%, var(--text-color-base) 50%),
+        linear-gradient(135deg, var(--text-color-base) 50%, transparent 50%);
+    background-position: 
+        calc(100% - 15px) calc(50% + 2px),
+        calc(100% - 10px) calc(50% + 2px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    vertical-align: middle;
+}
+select:focus {
+    outline: none;
+    border-color: var(--border-color-accent);
+    box-shadow: 0 0 0 2px var(--bg-color-header);
+}
+
+
+/* ★★★ STYLE OF <details class="custom-dropdown"> ★★★ */
+details.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+details.custom-dropdown > summary {
+    list-style: none;
+    padding: 0.5rem 1.5rem;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color-header);
+    background-color: var(--bg-color-accent);
+    border: 1px solid var(--border-color-base);
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    transition: background-color 0.2s ease;
+}
+details.custom-dropdown > summary::-webkit-details-marker {
+    display: none;
+}
+details.custom-dropdown > summary::after {
+    content: "▼";
+    font-size: 0.75rem;
+    transition: transform 0.2s ease;
+}
+details.custom-dropdown[open] > summary::after {
+    transform: rotate(180deg);
+}
+details.custom-dropdown > .dropdown-content {
+    position: absolute;
+    top: calc(100% + 0.3rem);
+    left: 0;
+    min-width: 100%;
+    background-color: var(--bg-color-base);
+    border: 1px solid var(--border-color-base);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    padding: 0.5rem;
+    z-index: 100;
+    white-space: nowrap;
+}
+
+
+/* ★★★ STYLE OF <input> AND <textarea> ★★★ */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="date"],
+input[type="time"],
+textarea {
+    display: inline-block;
+    field-sizing: content;
+    min-width: 5rem;
+    padding: 0.5rem 0.75rem;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--text-color-base);
+    background-color: var(--bg-color-base);
+    border: 1px solid var(--border-color-base);
+    border-radius: 4px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    vertical-align: middle;
+}
+textarea {
+    resize: both;
+    min-height: 2.5rem;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--border-color-accent);
+    box-shadow: 0 0 0 2px var(--bg-color-header);
+}
+input::placeholder,
+textarea::placeholder {
+    color: var(--bg-color-empty);
+}
+
+
+/* ★★★ STYLE OF <input type="radio"> AND <input type="checkbox"> ★★★ */
+input[type="radio"],
+input[type="checkbox"] {
+    appearance: auto;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+
+/* ★★★ STYLE OF <details> ★★★ */
+details:not(.custom-dropdown) {
+    background-color: var(--bg-color-base);
+    border: 1px solid var(--border-color-base);
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+details:not(.custom-dropdown) > summary {
+    font-weight: bold;
+    padding: 0.8rem 1.2rem;
+    background-color: var(--bg-color-accent);
+    color: var(--text-color-header);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+details:not(.custom-dropdown) > summary:hover {
+    background-color: var(--bg-color-empty);
+}
+details:not(.custom-dropdown)[open] > summary {
+    border-bottom: 1px solid var(--border-color-base);
+}
+details:not(.custom-dropdown) > div,
+details:not(.custom-dropdown) > p {
+    padding: 1rem 1.2rem;
+}
+
+
+/* ★★★ STYLE OF <dialog> ★★★ */
+dialog {
+    background-color: var(--bg-color-base);
+    color: var(--text-color-base);
+    border: 2px solid var(--border-color-accent);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px var(--shadow-color);
+    padding: 1.5rem;
+    max-width: 90vw;
+    width: 35rem;
+    margin: auto;
+}
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+}
