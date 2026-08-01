@@ -515,8 +515,9 @@ dialog {
     border-radius: 8px;
     box-shadow: 0 8px 24px var(--shadow-color);
     padding: 1.5rem;
-    max-width: 90vw;
-    width: 35rem;
+    min-width: 10rem;
+    width: fit-content;
+    max-width: min(90vw, 35rem);
     margin: auto;
 }
 dialog::backdrop {
