@@ -570,21 +570,22 @@ dialog::backdrop {
 
 /* ★★★ STYLE OF <hr> ★★★ */
 hr {
-  margin: 1.5rem auto;
-  width: 80%;
-  border-style: dashed;
+    margin: 1.5rem auto;
+    width: 80%;
+    border-style: dashed;
 }
 hr[data-for-content] {
-  text-align: center;
-  overflow: visible;
+    text-align: center;
+    overflow: visible;
 }
 hr[data-for-content]::after {
-  content: attr(data-for-content);
-  font-size: 1rem;
-  display: inline-block;
-  background: #fff;
-  padding: 0rem 0.5rem;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+    content: attr(data-for-content);
+    color: var(--text-color-base);
+    font-size: 1rem;
+    display: inline-block;
+    background-color: var(--bg-color-base);
+    padding: 0rem 0.5rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
