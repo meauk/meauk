@@ -311,6 +311,13 @@ ul > li > ul > li > ul > li > ul > li > ul > li > ul > li {
 }
 
 
+/* ★★★ STYLE FOR class="block" ★★★ */
+.block {
+    display: block;
+    margin: 0.5rem auto;
+}
+
+
 /* ★★★ STYLE OF BUTTONS ★★★ */
 button,
 input[type="button"],
