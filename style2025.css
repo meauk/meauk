@@ -265,7 +265,7 @@ code:has(div){
 code > div {
     white-space: pre;
 }
-code .indent {
+code .indent-margin {
     margin-left: 0rem;
     padding-left: calc(var(--indent-size) * 1rem);
 }
@@ -305,14 +305,37 @@ ul > li > ul > li > ul > li > ul > li > ul > li > ul > li {
 }
 
 
-/* ★★★ STYLE FOR class="indent" ★★★ */
-.indent:not(code) {
+/* ★★★ STYLE FOR class="indent-margin" ★★★ */
+.indent-margin:not(code) {
     margin-left: calc(var(--indent-size) * 1rem);
 }
 
 
-/* ★★★ STYLE FOR class="block" ★★★ */
-.block {
+
+/* ★★★ STYLE FOR class="flex-center" ★★★ */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ★★★ STYLE FOR class="flex-vert-center" ★★★ */
+.flex-vert-center {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ★★★ STYLE FOR class="flex-horiz-center" ★★★ */
+.flex-horiz-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ★★★ STYLE FOR class="display-block" ★★★ */
+.display-block {
     display: block;
     margin: 0.5rem auto;
 }
