@@ -39,7 +39,7 @@
 
 /* ★★★ <html> etc. ★★★ */
 html {
-    font-size: clamp(16px, 2.5vw, 18px);
+    font-size: clamp(16px, 2.5dvw, 18px);
     box-sizing: border-box;
     scroll-behavior: smooth;
     color-scheme: light dark;
@@ -62,9 +62,14 @@ body {
     margin: 0;
     padding: 1.5rem;
     overflow-wrap: break-word;
-    max-width: 100vw;
+    max-width: 100dvw;
     /* ★★ COUNTER ★★ */
     counter-reset: h2-counter;
+}
+@media print {
+    body:has(dialog[open]) > *:not(dialog[open]) {
+        display: none !important;
+    }
 }
 
 
@@ -135,8 +140,8 @@ div.scrollable-wrapper {
 @media print {
     div.scrollable-wrapper {
         overflow-x: visible;
-        page-break-before: always;
-        page-break-after: always;
+        break-before: always;
+        break-after: always;
     }
 }
 
@@ -557,14 +562,31 @@ dialog {
     border-radius: 8px;
     box-shadow: 0 8px 24px var(--shadow-color);
     padding: 1.5rem;
+    min-height: 10rem;
     min-width: 10rem;
+    height: fit-content;
     width: fit-content;
-    max-width: min(90vw, 35rem);
+    max-height: min(90dvh, 35rem);
+    max-width: min(90dvw, 35rem);
+    overflow: auto;
+    overscroll-behavior: contain;
     margin: auto;
 }
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+@media print {
+    dialog[open] {
+        position: static;
+        border: none;
+        box-shadow: none;
+        padding: 0rem;
+        max-height: none;
+        max-width: none;
+        margin: 0rem;
+    }
 }
 
 
